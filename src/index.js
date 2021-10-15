@@ -15,7 +15,7 @@ function oninput(event)
   state.searchfeild=event.target.value;
   
   state.list2=list.filter(rbs =>
-    {return(rbs.name.toLowerCase().includes(state.searchfeild));}) 
+    {return(rbs.name.toLowerCase().includes(state.searchfeild.toLowerCase()));}) 
   doit(); 
 }
 function doit()
